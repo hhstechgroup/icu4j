@@ -22,6 +22,7 @@ import com.ibm.icu.text.*;
 import com.ibm.icu.impl.Utility;
 import java.util.Locale;
 
+
 public class CollationMiscTest extends TestFmwk{
 
     public static void main(String[] args) throws Exception {
@@ -64,9 +65,9 @@ public class CollationMiscTest extends TestFmwk{
                 {"c", "b", "\\u0332", "a"},
                 {"\\u0332", "\\u20e3", "c", "b", "a"},
                 {"c", "b", "\\u0009", "a", "\\u000a"},
-                {"c", "b", "\\uD800\\uDF23", "a", "\\u02d0"},
+                {"c", "b", "\\uD800\\uDD33", "a", "\\u02d0"},
                 {"b", "\\u02d0", "a", "\\u02d1"},
-                {"b", "\\ud801\\udc25", "a", "\\u4e00"},
+                {"b", "\\ud800\\udf9d", "a", "\\u4e00"},
                 {"b", "\\u4e00", "a", "\\u4e01"},
                 {"b", "\\U0010FFFC", "a"},
                 {"\ufffb",  "w", "y", "\u20e3", "x", "\u137c", "z", "u"},
@@ -96,63 +97,21 @@ public class CollationMiscTest extends TestFmwk{
     void genericOrderingTestWithResult(Collator coll, String[] s, int result) {
         String t1 = "";
         String t2 = "";
-        CollationElementIterator iter = null;
         
-        int i = 0, j = 0;
-        // logln("testing sequence:");
-        for(i = 0; i < s.length; i++) {
-            // logln(s[i]);
-        }
-        try {
-        iter = ((RuleBasedCollator) coll).getCollationElementIterator(t1);
-        } catch (Exception e) {
-            errln("Creation of iterator failed");
-        }
-        for(i = 0; i < s.length - 1; i++) {
-            for(j = i+1; j < s.length; j++) {
+        for(int i = 0; i < s.length - 1; i++) {
+            for(int j = i+1; j < s.length; j++) {
                 t1 = Utility.unescape(s[i]);
                 t2 = Utility.unescape(s[j]);
                 // System.out.println(i + " " + j);
-                doTest(coll, t1, t2, result);
-                /* synwee : added collation element iterator test */
-                iter.setText(t1);
-                CollationIteratorTest.backAndForth(this, iter);
-                iter.setText(t2);
-                CollationIteratorTest.backAndForth(this, iter);
+                CollationTest.doTest(this, (RuleBasedCollator)coll, t1, t2, 
+                                     result);
             }
         }
     }
 
-    void doTest(Collator myCollation, String source, String target, int result) {
-        doTestVariant(myCollation, source, target, result);
-        if(result < 0) {
-            doTestVariant(myCollation, target, source, 1);
-        } else if(result > 0) {
-            doTestVariant(myCollation, target, source, -1);
-        } else {
-            doTestVariant(myCollation, target, source, 0);
-        }
-    }
     
-    void doTestVariant(Collator myCollation, String source, String target, int result) {
-        int incResult = result;
-        int compareResult  = myCollation.compare(source, target);
-        CollationKey sortKey1 = myCollation.getCollationKey(source);
-        CollationKey sortKey2 = myCollation.getCollationKey(target);
-        
-        int temp= sortKey1.compareTo(sortKey2);
-        int keyResult;
-        if(temp < 0) {
-            keyResult=-1;
-        }
-        else if(temp > 0) {
-            keyResult= 1;
-        }
-        else {
-            keyResult = 0;
-        }
-        reportCResult( source, target, sortKey1, sortKey2, compareResult, keyResult, incResult, result );
-    }
+    
+    
     
     void reportCResult(String source, String target, CollationKey sourceKey, CollationKey targetKey,
                               int compareResult, int keyResult, int incResult, int expectedResult ) {
@@ -433,9 +392,9 @@ public class CollationMiscTest extends TestFmwk{
     }
     
     void genericLocaleStarter(Locale locale, String s[]) {
-        Collator coll = null;
+        RuleBasedCollator coll = null;
         try {
-            coll = Collator.getInstance(locale);
+            coll = (RuleBasedCollator)Collator.getInstance(locale);
             
         } catch (Exception e) {
             errln("Unable to open collator for locale " + locale);
@@ -459,9 +418,11 @@ public class CollationMiscTest extends TestFmwk{
         for(int i = 0; i < attrs.length; i++) {
             if (attrs[i].equals("strength")) {
                 coll.setStrength(((Integer)values[i]).intValue());
-            } else if (attrs[i].equals("decomp")) {
+            } 
+            else if (attrs[i].equals("decomp")) {
                 coll.setDecomposition(((Integer)values[i]).intValue());
-            } else if (attrs[i].equals("AlternateHandling")) {
+            } 
+            else if (attrs[i].equals("AlternateHandling")) {
                 coll.setAlternateHandlingShifted(((Boolean)values[i]
                                                             ).booleanValue());
             }
@@ -503,7 +464,7 @@ public class CollationMiscTest extends TestFmwk{
         }
         // logln("Test non characters");
         
-        genericOrderingTestWithResult(coll, test, 0);
+        genericOrderingTestWithResult((RuleBasedCollator)coll, test, 0);
     }
     
     public void TestExtremeCompression() {
@@ -606,7 +567,7 @@ public class CollationMiscTest extends TestFmwk{
         // logln("Testing different case settings");
         myCollation.setStrength(Collator.TERTIARY);
     
-        for(k = 0; k<4; k++) {
+        for(k = 0; k <4; k++) {
             if (caseTestAttributes[k][0] == true) {
                 // upper case first
                 ((RuleBasedCollator)myCollation).setUpperCaseFirst(true);
@@ -615,14 +576,18 @@ public class CollationMiscTest extends TestFmwk{
                 // upper case first
                 ((RuleBasedCollator)myCollation).setLowerCaseFirst(true);   
             }
-          ((RuleBasedCollator)myCollation).setCaseLevel(caseTestAttributes[k][1]);
+            ((RuleBasedCollator)myCollation).setCaseLevel(
+                                                caseTestAttributes[k][1]);
           
-          // logln("Case first = " + caseTestAttributes[k][0] + ", Case level = " + caseTestAttributes[k][1]);
-          for (i = 0; i < 3 ; i++) {
-            for(j = i+1; j<4; j++) {
-              doTest(myCollation, testCase[i], testCase[j], caseTestResults[k][3*i+j-1]);
+            // logln("Case first = " + caseTestAttributes[k][0] + ", Case level = " + caseTestAttributes[k][1]);
+            for (i = 0; i < 3 ; i++) {
+                for(j = i+1; j<4; j++) {
+                    CollationTest.doTest(this, 
+                                        (RuleBasedCollator)myCollation, 
+                                        testCase[i], testCase[j], 
+                                        caseTestResults[k][3*i+j-1]);
+                }
             }
-          }
         }
         try {
             myCollation = new RuleBasedCollator(gRules);
@@ -640,12 +605,16 @@ public class CollationMiscTest extends TestFmwk{
         	else {
         		((RuleBasedCollator)myCollation).setUpperCaseFirst(false);
         	}
-          ((RuleBasedCollator)myCollation).setCaseLevel(caseTestAttributes[k][1]);
-          for (i = 0; i < 3 ; i++) {
-            for(j = i+1; j<4; j++) {
-              doTest(myCollation, testCase[i], testCase[j], caseTestResults[k][3*i+j-1]);
+            ((RuleBasedCollator)myCollation).setCaseLevel(
+                                                  caseTestAttributes[k][1]);
+            for (i = 0; i < 3 ; i++) {
+                for(j = i+1; j<4; j++) {
+                    CollationTest.doTest(this, 
+                                         (RuleBasedCollator)myCollation, 
+                                         testCase[i], testCase[j], 
+                                         caseTestResults[k][3*i+j-1]);
+                }
             }
-          }
         }
 
         {
@@ -682,9 +651,9 @@ public class CollationMiscTest extends TestFmwk{
             };
             // logln("mixed case test");
             // logln("lower first, case level off");
-            /* syn wee genericRulesStarter("[casefirst lower]&H<ch<<<Ch<<<CH", lowerFirst); */
+            genericRulesStarter("[casefirst lower]&H<ch<<<Ch<<<CH", lowerFirst); 
             // logln("upper first, case level off");
-            /* syn wee genericRulesStarter("[casefirst upper]&H<ch<<<Ch<<<CH", upperFirst); */
+            genericRulesStarter("[casefirst upper]&H<ch<<<Ch<<<CH", upperFirst);
             // logln("lower first, case level on");
             genericRulesStarter("[casefirst lower][caselevel on]&H<ch<<<Ch<<<CH", lowerFirst);
             // logln("upper first, case level on");
@@ -730,18 +699,9 @@ public class CollationMiscTest extends TestFmwk{
         int size = cnt1.length;
         for(int i = 0; i < size-1; i++) {
             for(int j = i+1; j < size; j++) {
-                CollationElementIterator iter;
                 String t1 = cnt1[i];
                 String t2 = cnt1[j];
-                doTest(coll, t1, t2, -1);
-                // synwee : added collation element iterator test 
-                try {
-                    iter = coll.getCollationElementIterator(t2);
-                } catch (Exception e) {
-                    errln("Creation of iterator failed");
-                    break;
-                }
-                CollationIteratorTest.backAndForth(this, iter);
+                CollationTest.doTest(this, coll, t1, t2, -1);
             }
         }
         
@@ -756,19 +716,9 @@ public class CollationMiscTest extends TestFmwk{
         size = cnt2.length;
         for(int i = 0; i < size-1; i++) {
             for(int j = i+1; j < size; j++) {
-                CollationElementIterator iter;
                 String t1 = cnt2[i];
                 String t2 = cnt2[j];
-                doTest(coll, t1, t2, -1);
-                
-                // synwee : added collation element iterator test
-                try {
-                    iter = coll.getCollationElementIterator(t2);
-                } catch (Exception e) {
-                    errln("Creation of iterator failed");
-                    break;
-                }
-                CollationIteratorTest.backAndForth(this, iter);
+                CollationTest.doTest(this, coll, t1, t2, -1);
             }
         }
     }
@@ -818,7 +768,7 @@ public class CollationMiscTest extends TestFmwk{
             for(j = i+1; j < size; j++) {
                 String t1 = nonignorable[i];
                 String t2 = nonignorable[j];
-                doTest(coll, t1, t2, -1);
+                CollationTest.doTest(this, (RuleBasedCollator)coll, t1, t2, -1);
             }
         }
         ((RuleBasedCollator)coll).setAlternateHandlingShifted(true);
@@ -828,7 +778,7 @@ public class CollationMiscTest extends TestFmwk{
             for(j = i+1; j < size; j++) {
                 String t1 = shifted[i];
                 String t2 = shifted[j];
-                doTest(coll, t1, t2, -1);
+                CollationTest.doTest(this, (RuleBasedCollator)coll, t1, t2, -1);
             }
         }
         coll.setStrength(Collator.TERTIARY);
@@ -836,7 +786,8 @@ public class CollationMiscTest extends TestFmwk{
         for(i = 1; i < size; i++) {
             String t1 = shifted[i-1];
             String t2 = shifted[i];
-            doTest(coll, t1, t2, shiftedTert[i]);
+            CollationTest.doTest(this, (RuleBasedCollator)coll, t1, t2, 
+                                 shiftedTert[i]);
         }
     }
     
@@ -879,7 +830,9 @@ public class CollationMiscTest extends TestFmwk{
         myCollation.setStrength(Collator.TERTIARY);
         for (int i = 0; i < 4 ; i++)
         {
-            doTest(myCollation, testSourceCases[i], testTargetCases[i], results[i]);
+            CollationTest.doTest(this, (RuleBasedCollator)myCollation, 
+                                 testSourceCases[i], testTargetCases[i], 
+                                 results[i]);
         }
     }
     
@@ -915,7 +868,7 @@ public class CollationMiscTest extends TestFmwk{
             for(int j = i+1; j < size; j++) {
                 String t1 = chTest[i];
                 String t2 = chTest[j];
-                doTest(coll, t1, t2, -1);
+                CollationTest.doTest(this, (RuleBasedCollator)coll, t1, t2, -1);
             }
         }
     }
@@ -943,7 +896,7 @@ public class CollationMiscTest extends TestFmwk{
             for(int j = i+1; j < size; j++) {
                 String t1 = impTest[i];
                 String t2 = impTest[j];
-                doTest(coll, t1, t2, -1);
+                CollationTest.doTest(this, (RuleBasedCollator)coll, t1, t2, -1);
             }
         }
     }
@@ -960,9 +913,9 @@ public class CollationMiscTest extends TestFmwk{
         }
         
         coll.setDecomposition(Collator.NO_DECOMPOSITION);
-        doTest(coll, s1, s2, 0);
+        CollationTest.doTest(this, (RuleBasedCollator)coll, s1, s2, 0);
         coll.setDecomposition(Collator.CANONICAL_DECOMPOSITION);
-        doTest(coll, s1, s2, 0);
+        CollationTest.doTest(this, (RuleBasedCollator)coll, s1, s2, 0);
     }
     
     public void TestEmptyRule() {
@@ -1006,6 +959,37 @@ public class CollationMiscTest extends TestFmwk{
         };
         genericLocaleStarter(new Locale("fr", ""), data);
         genericRulesStarter("[backwards 2]&A<<\u00e6/e<<<\u00c6/E", data);
+    }
+    
+    public void TestJ3087()
+    {
+        String rule[] = {"&h<H&CH=\u0427",
+                         "&CH=\u0427&h<H",
+                         "&CH=\u0427"}; 
+        RuleBasedCollator rbc = null;
+        CollationElementIterator iter1;
+        CollationElementIterator iter2;
+        for (int i = 0; i < rule.length; i ++) {
+            try {
+                rbc = new RuleBasedCollator(rule[i]); 
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            iter1 = rbc.getCollationElementIterator("CH"); 
+            iter2 = rbc.getCollationElementIterator("\u0427");
+            int ce1 = CollationElementIterator.IGNORABLE;
+            int ce2 = CollationElementIterator.IGNORABLE;
+            while (ce1 != CollationElementIterator.NULLORDER
+                 && ce2 != CollationElementIterator.NULLORDER) {
+                ce1 = iter1.next();
+                ce2 = iter2.next();
+                if (ce1 != ce2) {
+                    errln("Error generating RuleBasedCollator with the rule "
+                          + rule[i]);
+                    errln("CH != \\u0427");
+                }
+            }
+        }
     }
     
     public void TestJ831() {
@@ -1219,9 +1203,11 @@ public class CollationMiscTest extends TestFmwk{
                     strB.insert(1, ccMix[i % 3]);
                 }
                 coll.setStrength(Collator.TERTIARY);   // Do test with default strength, which runs
-                doTest(coll, strA.toString(), strB.toString(), 0);    //   optimized functions in the impl
+                CollationTest.doTest(this, (RuleBasedCollator)coll, 
+                                     strA.toString(), strB.toString(), 0);    //   optimized functions in the impl
                 coll.setStrength(Collator.IDENTICAL);   // Do again with the slow, general impl.
-                doTest(coll, strA.toString(), strB.toString(), 0);
+                CollationTest.doTest(this, (RuleBasedCollator)coll, 
+                                     strA.toString(), strB.toString(), 0);
             }
         }
         /*  Test 2:  Non-normal sequence in a string that extends to the last character*/
@@ -1231,7 +1217,7 @@ public class CollationMiscTest extends TestFmwk{
             String strA = "AA\u0300\u0316";
             String strB = "A\u00c0\u0316";
             coll.setStrength(Collator.TERTIARY);
-            doTest(coll, strA, strB, 0);
+            CollationTest.doTest(this, (RuleBasedCollator)coll, strA, strB, 0);
         }
         /*  Test 3:  Non-normal sequence is terminated by a surrogate pair.*/
         // logln("Test 3 ....");
@@ -1239,7 +1225,7 @@ public class CollationMiscTest extends TestFmwk{
             String strA = "AA\u0300\u0316\uD800\uDC01";
             String strB = "A\u00c0\u0316\uD800\uDC00";
             coll.setStrength(Collator.TERTIARY);
-            doTest(coll, strA, strB, 1);
+            CollationTest.doTest(this, (RuleBasedCollator)coll, strA, strB, 1);
         }
         /*  Test 4:  Imbedded nulls do not terminate a string when length is specified.*/
         // logln("Test 4 ....");
@@ -1482,7 +1468,8 @@ public class CollationMiscTest extends TestFmwk{
             }
             
             for (int j = 0; j < 5; j ++) {
-                doTest(coll, testdata[j], testdata[j + 1], -1);
+                CollationTest.doTest(this, (RuleBasedCollator)coll, 
+                                     testdata[j], testdata[j + 1], -1);
             }
         }
     }
@@ -1499,7 +1486,7 @@ public class CollationMiscTest extends TestFmwk{
             errln("Collator creation failed " + rules);
             return;
         }
-        doTest(coll, src, tgt, 1);
+        CollationTest.doTest(this, (RuleBasedCollator)coll, src, tgt, 1);
     }
     
      public void TestLocaleRuleBasedCollators() {
@@ -1507,6 +1494,7 @@ public class CollationMiscTest extends TestFmwk{
             // not serious enough to run this
             return;
         }
+        /// TODO: synwee to do strict checks on the locales
         Locale locale[] = Collator.getAvailableLocales();
         String prevrule = null;
         for (int i = 0; i < locale.length; i ++) {
@@ -1557,7 +1545,7 @@ public class CollationMiscTest extends TestFmwk{
             String strA = "AA\u0300\u0316\uD800\uDC01";
             String strB = "A\u00c0\u0316\uD800\uDC00";
             coll.setStrength(Collator.IDENTICAL);
-            doTest(coll, strA, strB, 1);
+            CollationTest.doTest(this, (RuleBasedCollator)coll, strA, strB, 1);
         } catch (Exception e) {
             errln(e.getMessage());
         }
@@ -1706,8 +1694,8 @@ public class CollationMiscTest extends TestFmwk{
         RuleBasedCollator collator = (RuleBasedCollator) Collator.getInstance();
         collator.setStrength(Collator.PRIMARY);
         collator.setAlternateHandlingShifted(true);
-        doTest(collator, " a", "a", 0);       // works properly
-        doTest(collator, "a", "a ", 0);       // inconsistent results
+        CollationTest.doTest(this, collator, " a", "a", 0); // works properly
+        CollationTest.doTest(this, collator, "a", "a ", 0); // inconsistent results
     }
     
 }

@@ -20,11 +20,13 @@ package com.ibm.icu.dev.test.collator;
 import com.ibm.icu.dev.test.*;
 import com.ibm.icu.text.*;
 import java.util.Locale;
+import java.util.Comparator;
+import java.util.Arrays;
 import java.io.*;
 
 public class CollationThaiTest extends TestFmwk {
     
-    final int MAX_FAILURES_TO_SHOW = 8;
+    final int MAX_FAILURES_TO_SHOW = -1;
     
     public static void main(String[] args) throws Exception {
         new CollationThaiTest().run(args);
@@ -73,9 +75,9 @@ public class CollationThaiTest extends TestFmwk {
             "\u0e01.\u0e01.",                      "<",    "\u0e01\u0e32",
         };
         
-        Collator coll = null;
+        RuleBasedCollator coll = null;
         try {
-            coll = Collator.getInstance(new Locale("th", "TH", ""));
+            coll = getThaiCollator();
         } catch (Exception e) {
             errln("Error: could not construct Thai collator");
             return;
@@ -83,7 +85,7 @@ public class CollationThaiTest extends TestFmwk {
         compareArray(coll, TESTS); 
     }
     
-    void compareArray(Collator c, String[] tests) {
+    void compareArray(RuleBasedCollator c, String[] tests) {
         for (int i = 0; i < tests.length; i += 3) {
             int expect = 0;
             if (tests[i+1].equals("<")) {
@@ -99,42 +101,7 @@ public class CollationThaiTest extends TestFmwk {
             }
             String s1 = tests[i];
             String s2 = tests[i+2];
-            int result = c.compare(s1, s2);
-            if (sign(result) != sign(expect)) {
-                errln("" + i/3 + ": compare(" + s1
-                      + " , " + s2  + ") got " + result + "; expected " + expect);
-    
-                CollationKey k1, k2;
-                try {
-                    k1 = c.getCollationKey(s1);
-                    k2 = c.getCollationKey(s2);
-                } catch (Exception e) {
-                    errln("Fail: getCollationKey returned ");
-                    return;
-                }
-                errln("  key1: " + prettify(k1));
-                errln("  key2: " + prettify(k2));
-            } else {
-                // Collator.compare worked OK; now try the collation keys
-                CollationKey k1, k2;
-                try {
-                    k1 = c.getCollationKey(s1);
-                    k2 = c.getCollationKey(s2);
-                } catch (Exception e) {
-                    //System.out.println(e);
-                    errln("Fail: getCollationKey returned ");
-                    return;
-                }
-    
-                result = k1.compareTo(k2);
-                if (sign(result) != sign(expect)) {
-                    errln("" + i/3 + ": key(" + s1
-                          + ").compareTo(key(" + s2
-                          + ")) got " + result + "; expected " + expect);
-                    
-                    errln("  " + prettify(k1) + " vs. " + prettify(k2));
-                }
-            }
+            CollationTest.doTest(this, c, s1, s2, expect);
         }
     }
     
@@ -150,30 +117,31 @@ public class CollationThaiTest extends TestFmwk {
      * preceding the following line.
      */
     public void TestDictionary() {
-        Collator coll = null;
+        RuleBasedCollator coll = null;
         try {
-            coll = Collator.getInstance(new Locale("th", "TH", ""));
+            coll = getThaiCollator();
         } catch (Exception e) {
             errln("Error: could not construct Thai collator");
             return;
         }
      
         // Read in a dictionary of Thai words
-        DataInputStream in = null;
-        String fileName = "th18057.txt";
+        BufferedReader in = null;
+        String fileName = "riwords.txt";
         try {
-            in = new DataInputStream(new FileInputStream(TestUtil.getDataFile(
-                                                                   fileName)));
+            in = new BufferedReader(
+                    new InputStreamReader(
+                        new FileInputStream(TestUtil.getDataFile(fileName)),
+                                            "UTF-8"));
         } catch (Exception e) {
             try {
                 in.close();
             } catch (IOException ioe) {}
-            errln("Error: could not open test file: " + fileName);
+            errln("Error: could not open test file: " + fileName 
+                  + ". Aborting test.");
             return;        
         }
     
-        stripBOM(in);
-        
         //
         // Loop through each word in the dictionary and compare it to the previous
         // word.  They should be in sorted order.
@@ -182,13 +150,14 @@ public class CollationThaiTest extends TestFmwk {
         int line = 0;
         int failed = 0;
         int wordCount = 0;
-        String word = readLine(in);
+        try {
+        String word = in.readLine();
         while (word != null) {
             line++;
-    
+             
             // Skip comments and blank lines
             if (word.length() == 0 || word.charAt(0) == 0x23) {
-                word = readLine(in);
+                word = in.readLine();
                 continue;
             }
     
@@ -199,20 +168,8 @@ public class CollationThaiTest extends TestFmwk {
             }
     
             if (lastWord.length() > 0) {
-                int result = 0;
-                try {
-                    CollationIteratorTest.backAndForth(this, 
-                        ((RuleBasedCollator)coll).getCollationElementIterator(
-                                                                    lastWord));
-                    CollationIteratorTest.backAndForth(this, 
-                        ((RuleBasedCollator)coll).getCollationElementIterator(
-                                                                        word));
-                    result = coll.compare(lastWord, word);
-                } catch (Exception e) {
-                    logln("line" + line + ":" + word);
-                    logln("lastWord = " + lastWord);
-                    logln(e.getMessage());
-                }
+                CollationTest.doTest(this, coll, lastWord, word, -1);
+                int result = coll.compare(lastWord, word); 
         
                 if (result >= 0) {
                     failed++;
@@ -237,7 +194,10 @@ public class CollationThaiTest extends TestFmwk {
                 }
             }
             lastWord = word;
-            word = readLine(in);
+            word = in.readLine();
+        }
+        } catch (IOException e) {
+            errln("IOException " + e.getMessage());
         }
     
         if (failed != 0) {
@@ -252,84 +212,104 @@ public class CollationThaiTest extends TestFmwk {
         logln("Words checked: " + wordCount);
     }
     
-    private static final byte BOM[] = {(byte) 0xEF, (byte) 0xBB, (byte) 0xBF};
-    
-    private byte savedBytes[]= new byte[BOM.length];
-    private int  savedByteCount = 0;
-    private int  savedByte = 0;
-    
-    void stripBOM(DataInputStream in) {
+    public void TestInvalidThai() 
+    {
+        String tests[] = { "\u0E44\u0E01\u0E44\u0E01",
+                           "\u0E44\u0E01\u0E01\u0E44",
+                           "\u0E01\u0E44\u0E01\u0E44",
+                           "\u0E01\u0E01\u0E44\u0E44",
+                           "\u0E44\u0E44\u0E01\u0E01",
+                           "\u0E01\u0E44\u0E44\u0E01",
+                         };
+     
+        RuleBasedCollator collator;
+        StrCmp comparator;
         try {
-            savedByteCount = in.read(savedBytes, 0, BOM.length);
-            
-            for (int i = 0; i < BOM.length; i += 1) {
-                if (savedBytes[i] != BOM[i]) {
-                    return;
+            collator = getThaiCollator();
+            comparator = new StrCmp();
+        } catch (Exception e) {
+            errln("Error: could not construct Thai collator");
+            return;
+        }
+        
+        Arrays.sort(tests, comparator);
+     
+        for (int i = 0; i < tests.length; i ++)
+        {
+            for (int j = i + 1; j < tests.length; j ++) {
+                if (collator.compare(tests[i], tests[j]) > 0) {
+                    // inconsistency ordering found!
+                    errln("Inconsistent ordering between strings " + i 
+                          + " and " + j);
                 }
             }
-            
-            savedByteCount = 0;
-            savedByte = 0;
-        } catch (EOFException ee) {
-            // nothing
-        } catch (IOException e) {
-            // nothing
+            CollationElementIterator iterator 
+                = collator.getCollationElementIterator(tests[i]);
+            CollationTest.backAndForth(this, iterator);
         }
     }
     
-    String readLine(DataInputStream in) {
-        byte[] bytes = new byte[128];
-        int i = 0;
-        byte c = 0;
-        
-        while (i < 128) {
-            if (savedByte < savedByteCount) {
-                c = savedBytes[savedByte++];
-            } else {
-                try {
-                    c = in.readByte();
-                } catch (EOFException ee) {
-                    return null;
-                } catch (IOException e) {
-                    errln("Cannot read line from the file");
-                    return null;
-                }
-            }
-            
-            if (c == 0xD) {
-                try {
-                    c = in.readByte();
-                    
-                    if (c != 0xA) {
-                        savedBytes[0] = c;
-                        savedByte = 0;
-                        savedByteCount = 1;
-                    }
-                } catch (EOFException ee) {
-                    break;
-                } catch (IOException e) {
-                    errln("Cannot read line from the file");
-                    return null;
-                }
-                
-                break;
-            } else if (c == 0xA) {
-                break;
-            }
-            
-            bytes[i++] = c;
-        }
-        
-        String line = null;
-        
+    public void TestReordering() 
+    {
+        String tests[] = {
+            "\u0E41c\u0301",      "=", "\u0E41\u0107", // composition
+            "\u0E41\uD835\uDFCE", "<", "\u0E41\uD835\uDFCF", // supplementaries
+            "\u0E41\uD834\uDD5F", "=", "\u0E41\uD834\uDD58\uD834\uDD65", // supplementary composition decomps to supplementary
+            "\u0E41\uD87E\uDC02", "=", "\u0E41\u4E41", // supplementary composition decomps to BMP
+            "\u0E41\u0301",       "=", "\u0E41\u0301", // unsafe (just checking backwards iteration)
+            "\u0E41\u0301\u0316", "=", "\u0E41\u0316\u0301",
+
+            "abc\u0E41c\u0301",      "=", "abc\u0E41\u0107", // composition
+            "abc\u0E41\uD834\uDC00", "<", "abc\u0E41\uD834\uDC01", // supplementaries
+            "abc\u0E41\uD834\uDD5F", "=", "abc\u0E41\uD834\uDD58\uD834\uDD65", // supplementary composition decomps to supplementary
+            "abc\u0E41\uD87E\uDC02", "=", "abc\u0E41\u4E41", // supplementary composition decomps to BMP
+            "abc\u0E41\u0301",       "=", "abc\u0E41\u0301", // unsafe (just checking backwards iteration)
+            "abc\u0E41\u0301\u0316", "=", "abc\u0E41\u0316\u0301",
+
+            "\u0E41c\u0301abc",      "=", "\u0E41\u0107abc", // composition
+            "\u0E41\uD834\uDC00abc", "<", "\u0E41\uD834\uDC01abc", // supplementaries
+            "\u0E41\uD834\uDD5Fabc", "=", "\u0E41\uD834\uDD58\uD834\uDD65abc", // supplementary composition decomps to supplementary
+            "\u0E41\uD87E\uDC02abc", "=", "\u0E41\u4E41abc", // supplementary composition decomps to BMP
+            "\u0E41\u0301abc",       "=", "\u0E41\u0301abc", // unsafe (just checking backwards iteration)
+            "\u0E41\u0301\u0316abc", "=", "\u0E41\u0316\u0301abc",
+
+            "abc\u0E41c\u0301abc",      "=", "abc\u0E41\u0107abc", // composition
+            "abc\u0E41\uD834\uDC00abc", "<", "abc\u0E41\uD834\uDC01abc", // supplementaries
+            "abc\u0E41\uD834\uDD5Fabc", "=", "abc\u0E41\uD834\uDD58\uD834\uDD65abc", // supplementary composition decomps to supplementary
+            "abc\u0E41\uD87E\uDC02abc", "=", "abc\u0E41\u4E41abc", // supplementary composition decomps to BMP
+            "abc\u0E41\u0301abc",       "=", "abc\u0E41\u0301abc", // unsafe (just checking backwards iteration)
+            "abc\u0E41\u0301\u0316abc", "=", "abc\u0E41\u0316\u0301abc",
+        };
+
+        RuleBasedCollator collator;
         try {
-            line = new String(bytes, 0, i, "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            System.out.println(e);
+            collator = (RuleBasedCollator)getThaiCollator();
+        } catch (Exception e) {
+            errln("Error: could not construct Thai collator");
+            return;
         }
-        
-        return line;
+        compareArray(collator, tests);
+    
+        String rule = "& c < ab";
+        String testcontraction[] = { "\u0E41ab", "<", "\u0E41c"};
+        try {
+            collator = new RuleBasedCollator(rule);
+        } catch (Exception e) {
+            errln("Error: could not construct collator with rule " + rule);
+            return;
+        }
+        compareArray(collator, testcontraction);
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
     
     String prettify(CollationKey sourceKey) {
         int i;
@@ -342,5 +322,37 @@ public class CollationThaiTest extends TestFmwk {
         }
         target += "]";
         return target;
+    }
+    
+    // private inner class -------------------------------------------------
+    
+    private static final class StrCmp implements Comparator 
+    {
+        public int compare(Object string1, Object string2) 
+        {
+            return collator.compare(string1, string2);
+        }
+        
+        StrCmp() throws Exception
+        {
+            collator = getThaiCollator();
+        }
+        
+        Collator collator;
+    }
+    
+    // private data members ------------------------------------------------
+    
+    private static RuleBasedCollator m_collator_;
+    
+    // private methods -----------------------------------------------------
+    
+    private static RuleBasedCollator getThaiCollator() throws Exception
+    {
+        if (m_collator_ == null) {
+            m_collator_ = (RuleBasedCollator)Collator.getInstance(
+                                                new Locale("th", "TH", ""));
+        }
+        return m_collator_;
     }
 }

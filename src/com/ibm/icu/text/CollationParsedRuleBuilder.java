@@ -5,8 +5,8 @@
 *******************************************************************************
 *
 * $Source: /xsrl/Nsvn/icu/icu4j/src/com/ibm/icu/text/CollationParsedRuleBuilder.java,v $ 
-* $Date: 2003/06/03 18:49:33 $ 
-* $Revision: 1.20 $
+* $Date: 2003/09/15 19:00:09 $ 
+* $Revision: 1.22.2.1 $
 *
 *******************************************************************************
 */
@@ -492,7 +492,13 @@ final class CollationParsedRuleBuilder
 		    // now we need to generate the CEs  
 		    // We stuff the initial value in the buffers, and increase the 
             // appropriate buffer according to strength
-		    initBuffers(m_parser_.m_listHeader_[i]);
+            if (m_parser_.m_listHeader_[i].m_first_ != null) { 
+                // if there are any elements
+                // due to the way parser works, subsequent tailorings
+                // may remove all the elements from a sequence, therefore
+                // leaving an empty tailoring sequence.
+		        initBuffers(m_parser_.m_listHeader_[i]);
+            }
 	    }
 		
         if (m_parser_.m_variableTop_ != null) { 
@@ -1476,9 +1482,9 @@ final class CollationParsedRuleBuilder
 	        if (Utility.compareUnsigned(low, 
                                RuleBasedCollator.COMMON_BOTTOM_2_ << 24) < 0) {
 	            g.m_rangesLength_ = allocateWeights(
-                                         RuleBasedCollator.COMMON_TOP_2_ << 24, 
+                                         RuleBasedCollator.COMMON_BOTTOM_2_ << 24, 
                                          high, count, maxbyte, g.m_ranges_);
-	            g.m_current_ = RuleBasedCollator.COMMON_BOTTOM_2_;
+	            g.m_current_ = RuleBasedCollator.COMMON_BOTTOM_2_ << 24;
 	            return g.m_current_;
 	        }
 	    } 
@@ -1495,8 +1501,10 @@ final class CollationParsedRuleBuilder
     /**
      * @param ceparts list of collation elements parts
      * @param token rule token
+     * @exception Exception thrown when forming case bits for expansions fails
      */
     private void doCE(int ceparts[], CollationRuleParser.Token token) 
+                                                              throws Exception
     {
         // this one makes the table and stuff
 	    // int noofbytes[] = new int[3];
@@ -1524,6 +1532,7 @@ final class CollationParsedRuleBuilder
 		    if (cei < m_utilIntBuffer_[1]) {
 		        value |= ((ceparts[1] >> (32 - ((cei + 1) << 3))) & 0xFF) << 8;
 		    }
+            
 		    if (cei < m_utilIntBuffer_[2]) {
 		        value |= ((ceparts[2] >> (32 - ((cei+1) << 3))) & 0x3F);
 		    }
@@ -1536,7 +1545,23 @@ final class CollationParsedRuleBuilder
 		  } 
           else { // there is at least something
 		      token.m_CELength_ = cei;
-		}
+		  }
+          
+          // Case bits handling for expansion
+          int startoftokenrule = token.m_source_ & 0xFF;
+          if ((token.m_source_ >>> 24) > 1) {
+              // Do it manually
+             int length = token.m_source_ >>> 24;
+             String tokenstr = token.m_rules_.substring(startoftokenrule, 
+                                                 startoftokenrule + length);
+             token.m_CE_[0] |= getCaseBits(tokenstr);
+          } 
+          else {
+              // Copy it from the UCA
+              int caseCE 
+                 = getFirstCE(token.m_rules_.charAt(startoftokenrule));
+              token.m_CE_[0] |= (caseCE & 0xC0);
+         }
 	}
 
     /**
@@ -1564,8 +1589,7 @@ final class CollationParsedRuleBuilder
 	 * @exception Exception thrown when internal program error occurs
 	 */
 	private void createElements(BuildTable t, 
-	                            CollationRuleParser.TokenListHeader lh) 
-	                            throws Exception
+	                            CollationRuleParser.TokenListHeader lh)
     {
 	    CollationRuleParser.Token tok = lh.m_first_;
 	    m_utilElement_.clear();
@@ -1678,6 +1702,8 @@ final class CollationParsedRuleBuilder
 		             break;
 		        }
 		    }
+            
+            /***
 	
 	        // Case bits handling 
 	        m_utilElement_.m_CEs_[0] &= 0xFFFFFF3F; 
@@ -1694,6 +1720,7 @@ final class CollationParsedRuleBuilder
 	            m_utilElement_.m_CEs_[0] |= (caseCE & 0xC0);
 	        }
 	
+            ***/
 	        // and then, add it
 	        addAnElement(t, m_utilElement_);
 	        tok = tok.m_next_;
@@ -3156,7 +3183,7 @@ final class CollationParsedRuleBuilder
         //if (m_utilWeightRange_.m_end_ >= m_utilWeightRange_.m_start_) {
             m_utilWeightRange_.m_count_ 
                    = ((m_utilWeightRange_.m_end_ - m_utilWeightRange_.m_start_) 
-                      >> 24) + 1;
+                      >>> 24) + 1;
         } 
         else {
             // eliminate overlaps

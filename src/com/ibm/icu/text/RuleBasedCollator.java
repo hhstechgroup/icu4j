@@ -5,8 +5,8 @@
 *******************************************************************************
 *
 * $Source: /xsrl/Nsvn/icu/icu4j/src/com/ibm/icu/text/RuleBasedCollator.java,v $
-* $Date: 2003/06/09 23:15:00 $
-* $Revision: 1.40 $
+* $Date: 2003/08/25 23:23:12 $
+* $Revision: 1.44 $
 *
 *******************************************************************************
 */
@@ -272,7 +272,7 @@ public final class RuleBasedCollator extends Collator
      */
     public void setHiraganaQuaternary(boolean flag)
     {
-    m_isHiragana4_ = flag;
+        m_isHiragana4_ = flag;
     }
 
     /**
@@ -285,7 +285,7 @@ public final class RuleBasedCollator extends Collator
      */
     public void setHiraganaQuaternaryDefault()
     {
-    m_isHiragana4_ = m_defaultIsHiragana4_;
+        m_isHiragana4_ = m_defaultIsHiragana4_;
     }
 
     /**
@@ -339,19 +339,19 @@ public final class RuleBasedCollator extends Collator
      */
     public void setLowerCaseFirst(boolean lowerfirst)
     {
-    if (lowerfirst) {
-            if(m_caseFirst_ != AttributeValue.LOWER_FIRST_) {
-                latinOneRegenTable_ = true;
-            }
-            m_caseFirst_ = AttributeValue.LOWER_FIRST_;
-    }
-    else {
-            if(m_caseFirst_ != AttributeValue.OFF_) {
-                latinOneRegenTable_ = true;
-            }
-        m_caseFirst_ = AttributeValue.OFF_;
+        if (lowerfirst) {
+                if(m_caseFirst_ != AttributeValue.LOWER_FIRST_) {
+                    latinOneRegenTable_ = true;
+                }
+                m_caseFirst_ = AttributeValue.LOWER_FIRST_;
         }
-    updateInternalState();
+        else {
+                if(m_caseFirst_ != AttributeValue.OFF_) {
+                    latinOneRegenTable_ = true;
+                }
+            m_caseFirst_ = AttributeValue.OFF_;
+            }
+        updateInternalState();
     }
 
     /**
@@ -370,8 +370,8 @@ public final class RuleBasedCollator extends Collator
         if(m_caseFirst_ != m_defaultCaseFirst_) {
             latinOneRegenTable_ = true;
         }
-    m_caseFirst_ = m_defaultCaseFirst_;
-    updateInternalState();
+        m_caseFirst_ = m_defaultCaseFirst_;
+        updateInternalState();
     }
 
     /**
@@ -444,7 +444,7 @@ public final class RuleBasedCollator extends Collator
     {
         setStrength(m_defaultStrength_);
     }
-
+    
     /**
      * Sets the mode for the direction of SECONDARY weights to be used in
      * French collation.
@@ -472,7 +472,7 @@ public final class RuleBasedCollator extends Collator
      * Sets the alternate handling for QUATERNARY strength to be either
      * shifted or non-ignorable.
      * See the UCA definition on
-     * <a href="http://www.unicode.org/unicode/reports/tr10/#§3.2.2 Variable Collation Elements">
+     * <a href="http://www.unicode.org/unicode/reports/tr10/#Variable_Weighting">
      * Alternate Weighting</a>.
      * This attribute will only be effective when QUATERNARY strength is set.
      * The default value for this mode is false, corresponding to the
@@ -624,7 +624,7 @@ public final class RuleBasedCollator extends Collator
     {
         m_variableTopValue_ = (varTop & CE_PRIMARY_MASK_) >> 16;
     }
-
+    
     // public getters --------------------------------------------------------
 
     /**
@@ -808,7 +808,7 @@ public final class RuleBasedCollator extends Collator
      */
     public boolean isAlternateHandlingShifted()
     {
-    return m_isAlternateHandlingShifted_;
+        return m_isAlternateHandlingShifted_;
     }
 
     /**
@@ -2804,7 +2804,8 @@ public final class RuleBasedCollator extends Collator
             minlength = tlength;
         }
         while (result < minlength
-                && source.charAt(result) == target.charAt(result)) {
+                && source.charAt(result) == target.charAt(result)
+                && !CollationElementIterator.isThaiPreVowel(source.charAt(result))) {
             result ++;
         }
         if (result > 0) {
@@ -2941,9 +2942,18 @@ public final class RuleBasedCollator extends Collator
                 // if both primaries are the same
                 if (sorder == torder) {
                     // and there are no more CEs, we advance to the next level
+                    // see if we are at the end of either string
                     if (m_srcUtilCEBuffer_[m_srcUtilCEBufferSize_ - 1]
-                                    == CollationElementIterator.NULLORDER) {
+                                        == CollationElementIterator.NULLORDER) {
+                        if (m_tgtUtilCEBuffer_[m_tgtUtilCEBufferSize_ - 1] 
+                            != CollationElementIterator.NULLORDER) {
+                            return -1;
+                        }
                         break;
+                    }
+                    else if (m_tgtUtilCEBuffer_[m_tgtUtilCEBufferSize_ - 1]
+                             == CollationElementIterator.NULLORDER) {
+                        return 1;
                     }
                     if (doHiragana4 && hiraganaresult == 0
                         && m_srcUtilColEIter_.m_isCodePointHiragana_ !=
@@ -3166,7 +3176,15 @@ public final class RuleBasedCollator extends Collator
                 if (sorder == torder) {
                     if (m_srcUtilCEBuffer_[soffset - 1]
                                     == CollationElementIterator.NULLORDER) {
+                        if (m_tgtUtilCEBuffer_[toffset - 1] 
+                            != CollationElementIterator.NULLORDER) {
+                            return -1;
+                        }
                         break;
+                    }
+                    else if (m_tgtUtilCEBuffer_[toffset - 1]
+                             == CollationElementIterator.NULLORDER) {
+                        return 1;
                     }
                 }
                 else {
@@ -3296,9 +3314,18 @@ public final class RuleBasedCollator extends Collator
             sorder &= CE_CASE_BIT_MASK_;
             torder &= CE_CASE_BIT_MASK_;
             if (sorder == torder) {
+                // checking end of strings
                 if (m_srcUtilCEBuffer_[soffset - 1]
                                         == CollationElementIterator.NULLORDER) {
+                    if (m_tgtUtilCEBuffer_[toffset - 1] 
+                        != CollationElementIterator.NULLORDER) {
+                        return -1;
+                    }
                     break;
+                }
+                else if (m_tgtUtilCEBuffer_[toffset - 1]
+                            == CollationElementIterator.NULLORDER) {
+                    return 1;
                 }
             }
             else {
@@ -3352,7 +3379,15 @@ public final class RuleBasedCollator extends Collator
             if (sorder == torder) {
                 if (m_srcUtilCEBuffer_[soffset - 1]
                                     == CollationElementIterator.NULLORDER) {
+                    if (m_tgtUtilCEBuffer_[toffset - 1]
+                        != CollationElementIterator.NULLORDER) {
+                        return -1;
+                    }
                     break;
+                }
+                else if (m_tgtUtilCEBuffer_[toffset - 1]
+                            == CollationElementIterator.NULLORDER) {
+                    return 1;
                 }
             }
             else {
@@ -3429,7 +3464,15 @@ public final class RuleBasedCollator extends Collator
             if (sorder == torder) {
                 if (m_srcUtilCEBuffer_[soffset - 1]
                     == CollationElementIterator.NULLORDER) {
+                    if (m_tgtUtilCEBuffer_[toffset - 1]
+                        != CollationElementIterator.NULLORDER) {
+                        return -1;
+                    }
                     break;
+                }
+                else if (m_tgtUtilCEBuffer_[toffset - 1]
+                            == CollationElementIterator.NULLORDER) {
+                    return 1;
                 }
             }
             else {
@@ -3805,7 +3848,9 @@ public final class RuleBasedCollator extends Collator
               do {
                   //CE = *(contractionCEs + (UCharOffset - contractionIndex));
                   CE = m_contractionCE_[UCharOffset];
-                  if(getTag(CE) == CollationElementIterator.CE_EXPANSION_TAG_) {
+                  if(isSpecial(CE) 
+                     && getTag(CE) 
+                               == CollationElementIterator.CE_EXPANSION_TAG_) {
                     int i;    /* general counter */
                     //uint32_t *CEOffset = (uint32_t *)image+getExpansionOffset(CE); /* find the offset to expansion table */
                     int offset = ((CE & 0xFFFFF0) >> 4) - m_expansionOffset_; //it.getExpansionOffset(this, CE);
