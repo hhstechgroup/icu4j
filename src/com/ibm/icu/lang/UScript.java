@@ -95,6 +95,7 @@ public final class UScript {
 	   new NameCodePair( "CANADIAN_ABORIGINAL", UCAS        ),
 	   new NameCodePair( "CHEROKEE",            CHEROKEE    ),
 	   new NameCodePair( "COMMON",              COMMON      ),
+       new NameCodePair( "COPTIC",              COPTIC      ),
 	   new NameCodePair( "CYRILLIC",            CYRILLIC    ),
 	   new NameCodePair( "DESERET",             DESERET     ),
 	   new NameCodePair( "DEVANAGARI",          DEVANAGARI  ),
@@ -113,6 +114,7 @@ public final class UScript {
 	   new NameCodePair( "KANNADA",             KANNADA     ),
 	   new NameCodePair( "KATAKANA",            KATAKANA    ),
 	   new NameCodePair( "KHMER",               KHMER       ),
+       new NameCodePair( "LAO",                 LAO         ),
 	   new NameCodePair( "LATIN",               LATIN       ),
 	   new NameCodePair( "MALAYALAM",           MALAYALAM   ),
 	   new NameCodePair( "MONGOLIAN",           MONGOLIAN   ),
@@ -377,7 +379,8 @@ public final class UScript {
         char[] name2 = s2.toCharArray();
         int i=0;
         int j=0;
-        
+        int endIndex1 = name1.length-1;
+        int endIndex2 = name2.length-1;
 	    for(;;) {
             if((i>=name1.length)||(j>=name2.length)) {
                 return (name1.length - name2.length);
@@ -400,7 +403,9 @@ public final class UScript {
 	                return rc;
 	            }
 	        }
-	
+	        if(i==endIndex1 && j==endIndex2){
+                return 0;
+            }
 	        ++i;
 	        ++j;
         }
