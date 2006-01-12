@@ -1,13 +1,12 @@
 /*
  *******************************************************************************
- * Copyright (C) 1996-2005, International Business Machines Corporation and    *
+ * Copyright (C) 1996-2006, International Business Machines Corporation and    *
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
 
 package com.ibm.icu.text;
 
-import com.ibm.icu.impl.ICULocaleData;
 import com.ibm.icu.impl.ICUResourceBundle;
 import com.ibm.icu.impl.CalendarData;
 import com.ibm.icu.impl.Utility;
@@ -96,7 +95,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
 
     /**
      * Constant for context.
-     * @draft ICU 3.6
+     * @internal revisit for ICU 3.6
      * @deprecated This is a draft API and might change in a future release of ICU.
      */
     public static final int DT_CONTEXT_COUNT = 2;
@@ -126,7 +125,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
 
     /**
      * Constant for width.
-     * @draft ICU 3.6
+     * @internal revisit for ICU 3.6
      * @deprecated This is a draft API and might change in a future release of ICU.
      */
     public static final int DT_WIDTH_COUNT = 3;
@@ -386,7 +385,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
     /**
      * Sets era name strings. For example: "Anno Domini" and "Before Christ".
      * @param newEras the new era strings.
-     * @draft ICU 3.6
+     * @internal revisit for ICU 3.6
      */
     public void setEraNames(String[] newEraNames) {
         eraNames = duplicate(newEraNames);
@@ -458,10 +457,9 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * @param context    The formatting context, FORMAT or STANDALONE.
      * @param width      The width of the month string,
      *                   either WIDE, ABBREVIATED, or NARROW.
-     * @draft ICU 3.6
+     * @internal revisit for ICU 3.6
      * @deprecated This is a draft API and might change in a future release of ICU.
      */
-
     public void setMonths(String[] newMonths, int context, int width) {
         switch (context) {
            case FORMAT :
@@ -570,10 +568,9 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * @param context     The formatting context, FORMAT or STANDALONE.
      * @param width       The width of the strings,
      *                    either WIDE, ABBREVIATED, or NARROW.
-     * @draft ICU 3.6
+     * @internal revisit for ICU 3.6
      * @deprecated This is a draft API and might change in a future release of ICU.
      */
-
     public void setWeekdays(String[] newWeekdays, int context, int width) {
         switch (context) {
            case FORMAT :
@@ -1548,9 +1545,9 @@ public class DateFormatSymbols implements Serializable, Cloneable {
 
         String bundleName = className + "Symbols";
 
-        ResourceBundle result = null;
+        UResourceBundle result = null;
         try {
-            result = ICULocaleData.getResourceBundle(bundleName, locale);
+            result = UResourceBundle.getBundleInstance(bundleName, locale);
         }
         catch (MissingResourceException e) {
             ///CLOVER:OFF
