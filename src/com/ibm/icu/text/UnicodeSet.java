@@ -1,6 +1,6 @@
 /*
  *******************************************************************************
- * Copyright (C) 1996-2005, International Business Machines Corporation and    *
+ * Copyright (C) 1996-2006, International Business Machines Corporation and    *
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
@@ -624,8 +624,20 @@ public class UnicodeSet extends UnicodeFilter {
      * Generate and append a string representation of this set to result.
      * This does not use this.pat, the cleaned up copy of the string
      * passed to applyPattern().
+     * @param result the buffer into which to generate the pattern
+     * @param escapeUnprintable escape unprintable characters if true
      * @stable ICU 2.0
+     */
+    public StringBuffer _generatePattern(StringBuffer result, boolean escapeUnprintable) {
+        return _generatePattern(result, escapeUnprintable, true);
+    }
+
+    /**
+     * Generate and append a string representation of this set to result.
+     * This does not use this.pat, the cleaned up copy of the string
+     * passed to applyPattern().
      * @param includeStrings if false, doesn't include the strings.
+     * @internal
      */
     public StringBuffer _generatePattern(StringBuffer result,
                                          boolean escapeUnprintable, boolean includeStrings) {
@@ -1697,25 +1709,23 @@ public class UnicodeSet extends UnicodeFilter {
         
     }
 
-
     /**
      * @internal
-     * @deprecated
      * @return regex pattern equivalent to this UnicodeSet
      */
     public String getRegexEquivalent() {
-		if (strings.size() == 0) return toString();
-		StringBuffer result = new StringBuffer("(?:");
-		_generatePattern(result, true, false);
+        if (strings.size() == 0) return toString();
+        StringBuffer result = new StringBuffer("(?:");
+        _generatePattern(result, true, false);
         Iterator it = strings.iterator();
         while (it.hasNext()) {
             result.append('|');
             _appendToPat(result, (String) it.next(), true);
         }
-		return result.append(")").toString();
-	}
+        return result.append(")").toString();
+    }
 
-	/**
+    /**
      * Returns true if this set contains none of the characters
      * of the given range.
      * @param start first character, inclusive, of the range
@@ -3444,21 +3454,20 @@ public class UnicodeSet extends UnicodeFilter {
      * Internal class for customizing UnicodeSet parsing of properties.
      * TODO: extend to allow customizing of codepoint ranges
      * @internal
-     * @deprecated
      * @author medavis
      */
     abstract public static class XSymbolTable implements SymbolTable {
         public UnicodeMatcher lookupMatcher(int i) {
-        return null;
-    }
-        public boolean applyPropertyAlias(String propertyName, String propertyValue, UnicodeSet result) {
-        return false;
+            return null;
         }
-    public char[] lookup(String s) {
-        return null;
-    }
-    public String parseReference(String text, ParsePosition pos, int limit) {
-        return null;
-    }
+        public boolean applyPropertyAlias(String propertyName, String propertyValue, UnicodeSet result) {
+            return false;
+        }
+        public char[] lookup(String s) {
+            return null;
+        }
+        public String parseReference(String text, ParsePosition pos, int limit) {
+            return null;
+        }
     }
 }
