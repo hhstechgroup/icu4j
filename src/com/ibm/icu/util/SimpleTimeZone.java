@@ -1,5 +1,5 @@
 /*
-*   Copyright (C) 1996-2005, International Business Machines
+*   Copyright (C) 1996-2006, International Business Machines
 *   Corporation and others.  All Rights Reserved.
 */
 
@@ -178,8 +178,8 @@ public class SimpleTimeZone extends JDKTimeZone {
     /**
      * get the raw offset.
      *
-	 * @return the raw offset
-     * @draft ICU 3.6
+     * @return the raw offset
+     * @internal revisit for ICU 3.6
      * @deprecated This is a draft API and might change in a future release of ICU.
      */
     public int getRawOffset() {
@@ -450,8 +450,6 @@ public class SimpleTimeZone extends JDKTimeZone {
      * java.util.SimpleTimeZone.  Do not call; use the TimeZone
      * API.
      * @internal
-     * @deprecated
-     * @obsolete
      */
     public SimpleTimeZone(java.util.SimpleTimeZone tz, String ID) {
         super(tz);
@@ -498,11 +496,14 @@ public class SimpleTimeZone extends JDKTimeZone {
     }
     /**
      * Returns a string representation of this object.
-     * @return  a string representation of this object.
+     * @return  a string representation of this object
+     * @draft ICU 3.4.2
+     * @deprecated This is a draft API and might change in a future release of ICU.
      */
     public String toString() {
         return "SimpleTimeZone: " + getID();
     }
+
     private STZInfo getSTZInfo() {
         if (xinfo == null) {
             xinfo = new STZInfo();
@@ -520,6 +521,9 @@ public class SimpleTimeZone extends JDKTimeZone {
 
 //  -------------------------------------
 
+    /**
+     * @internal revisit for ICU 3.6
+     */
     public int getOffset(int era, int year, int month, int day,
                          int dayOfWeek, int millis) 
     {
@@ -537,6 +541,9 @@ public class SimpleTimeZone extends JDKTimeZone {
         return getOffset(era, year, month, day, dayOfWeek, millis, staticMonthLength[month]);
     }
 
+    /**
+     * @internal revisit for ICU 3.6
+     */
     public int getOffset(int era, int year, int month, int day,
                               int dayOfWeek, int millis, 
                               int monthLength)  {
@@ -662,11 +669,12 @@ public class SimpleTimeZone extends JDKTimeZone {
     }
 
 //     -------------------------------------
-    public static final int
+    private static final int
         DOM_MODE = 1,
         DOW_IN_MONTH_MODE=2,
         DOW_GE_DOM_MODE=3,
         DOW_LE_DOM_MODE=4;
+
     /**
      * TimeMode is used, together with a millisecond offset after
      * midnight, to specify a rule transition time.  Most rules
@@ -780,23 +788,32 @@ public class SimpleTimeZone extends JDKTimeZone {
     private boolean useDaylight; // flag indicating whether this TimeZone uses DST
     private int startMode, endMode;   // flags indicating what kind of rules the DST rules are
     
+    /**
+     * @internal revisit for ICU 3.6
+     */
     public boolean useDaylightTime(){
         return useDaylight;
     }
     
+    /**
+     * @internal revisit for ICU 3.6
+     */
     public boolean inDaylightTime(Date date){
         GregorianCalendar gc = new GregorianCalendar(this);
         gc.setTime(date);
         return gc.inDaylightTime();
     }
-    
-    public SimpleTimeZone(  int raw,  String ID,
-                            int startMonth, int startDay,
-                            int startDayOfWeek, int startTime,
-                            int startTimeMode,
-                            int endMonth, int endDay,
-                            int endDayOfWeek, int endTime,
-                            int endTimeMode,int dst){
+
+    /**
+     * @internal revisit for ICU 3.6
+     */
+    public SimpleTimeZone(int raw,  String ID,
+                          int startMonth, int startDay,
+                          int startDayOfWeek, int startTime,
+                          int startTimeMode,
+                          int endMonth, int endDay,
+                          int endDayOfWeek, int endTime,
+                          int endTimeMode,int dst){
         /*this(new java.util.SimpleTimeZone(rawOffsetGMT, ID, savingsStartMonth, savingsStartDay,
                 savingsStartDayOfWeek, savingsStartTime, savingsEndMonth,
                 savingsEndDay, savingsEndDayOfWeek, savingsEndTime, savingsDST), ID);*/
@@ -807,6 +824,7 @@ public class SimpleTimeZone extends JDKTimeZone {
                   endTime, endTimeMode,
                   dst);
     }
+
 //  -------------------------------------
 /*
     SimpleTimeZone(int rawOffsetGMT, String ID,
@@ -954,7 +972,6 @@ public class SimpleTimeZone extends JDKTimeZone {
      * @see #decodeStartRule
      */
     private void decodeEndRule() {
-
         useDaylight = (boolean)((startDay != 0) && (endDay != 0) ? true : false);
         if (useDaylight && dst == 0) {
             dst = TimeZone.MILLIS_PER_DAY;
@@ -995,6 +1012,12 @@ public class SimpleTimeZone extends JDKTimeZone {
         }
     }
 
+    /**
+     * Return true if obj is a SimpleTimeZone equivalent to this.
+     * @return true if obj is a SimpleTimeZone equivalent to this
+     * @draft ICU 3.4.2
+     * @deprecated This is a draft API and might change in a future release of ICU.
+     */
     public boolean equals(Object obj){
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
@@ -1029,6 +1052,13 @@ public class SimpleTimeZone extends JDKTimeZone {
         }
         return false;
     }
+
+    /**
+     * Return the hash code.
+     * @return the hash code
+     * @draft ICU 3.4.2
+     * @deprecated This is a draft API and might change in a future release of ICU.
+     */
     public int hashCode(){
     	int ret = (int)( super.hashCode() +
     					 raw ^ (raw>>>8) +
@@ -1052,6 +1082,12 @@ public class SimpleTimeZone extends JDKTimeZone {
 		return ret;
     }
 
+    /**
+     * Return a clone of this time zone.
+     * @return a clone of this time zone
+     * @draft ICU 3.4.2
+     * @deprecated This is a draft API and might change in a future release of ICU.
+     */
     public Object clone() {
         SimpleTimeZone clone = new SimpleTimeZone( raw, getID());
         clone.startMonth     = startMonth;
@@ -1071,6 +1107,10 @@ public class SimpleTimeZone extends JDKTimeZone {
         clone.useDaylight    = useDaylight;
         return clone;
     }
+
+    /**
+     * @internal revisit for ICU 3.6
+     */
     public boolean hasSameRules(TimeZone othr) {
     	if(!(othr instanceof SimpleTimeZone)){
     		return false;
