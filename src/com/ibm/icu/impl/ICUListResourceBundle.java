@@ -216,13 +216,13 @@ public class ICUListResourceBundle extends ListResourceBundle {
         }
         public Object getResource(Object obj){
             if(compressed==null){
-                return new byte[0];
+                return null;
             }
 
             if(expanded==null){
                 expanded= Utility.RLEStringToByteArray(compressed);
             }
-            return expanded ==null ? new byte[0]: expanded;
+            return expanded;
         }
 
     }

@@ -1048,9 +1048,7 @@ public class DecimalFormat extends NumberFormat {
         int i;
         char zero = symbols.getZeroDigit();
         int zeroDelta = zero - '0'; // '0' is the DigitList representation of zero
-        char grouping = isCurrencyFormat ?
-                    symbols.getMonetaryGroupingSeparator() :
-                    symbols.getGroupingSeparator();
+        char grouping = symbols.getGroupingSeparator();
         char decimal = isCurrencyFormat ?
             symbols.getMonetaryDecimalSeparator() :
             symbols.getDecimalSeparator();
@@ -2297,7 +2295,6 @@ public class DecimalFormat extends NumberFormat {
 //#endif
     
     /**
-     * <strong><font face=helvetica color=red>NEW</font></strong>
      * Set the rounding increment.  This method also controls whether
      * rounding is enabled.
      * @param newValue A positive rounding increment, or <code>null</code> or

@@ -1485,18 +1485,4 @@ public class NumberFormatTest extends com.ibm.icu.dev.test.TestFmwk {
             errln("FAIL \"" + pat + "\", expected \"" + exp + "\"");
         }
     }
-    
-    public void TestJB3832(){
-        ULocale locale = new ULocale("pt_PT@currency=PTE");
-        NumberFormat format = NumberFormat.getCurrencyInstance(locale);
-        Currency curr = Currency.getInstance(locale);
-        logln("\nName of the currency is: " + curr.getName(locale, Currency.LONG_NAME, new boolean[] {false}));
-        CurrencyAmount cAmt = new CurrencyAmount(1150.50, curr);
-        logln("CurrencyAmount object's hashCode is: " + cAmt.hashCode()); //cover hashCode
-        String str = format.format(cAmt);
-        String expected = "1,150$50 Esc.";
-        if(!expected.equals(str)){
-            errln("Did not get the expected output Expected: "+expected+" Got: "+ str);
-        }
-    }
 }

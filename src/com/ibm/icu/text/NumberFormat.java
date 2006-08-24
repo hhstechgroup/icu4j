@@ -1143,16 +1143,6 @@ public abstract class NumberFormat extends UFormat {
     static NumberFormat createInstance(ULocale desiredLocale, int choice) {
         String pattern = getPattern(desiredLocale, choice);
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(desiredLocale);
-        
-        // Here we assume that the locale passed in is in the canonical
-        // form, e.g: pt_PT_@currency=PTE not pt_PT_PREEURO
-        if(choice == CURRENCYSTYLE){
-            String temp = symbols.getCurrencyPattern();
-            if(temp!=null){
-                pattern = temp;
-            }
-        }
-        
         DecimalFormat format = new DecimalFormat(pattern, symbols);
         // System.out.println("loc: " + desiredLocale + " choice: " + choice + " pat: " + pattern + " sym: " + symbols + " result: " + format);
                                  
