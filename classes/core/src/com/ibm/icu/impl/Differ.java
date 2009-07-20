@@ -1,11 +1,11 @@
 /**
 *******************************************************************************
-* Copyright (C) 1996-2007, International Business Machines Corporation and    *
+* Copyright (C) 1996-2009, International Business Machines Corporation and    *
 * others. All Rights Reserved.                                                *
 *******************************************************************************
 */
 
-package com.ibm.icu.dev.test.util;
+package com.ibm.icu.impl;
 
 /** VERY Basic Diff program. Compares two sequences of objects fed into it, and
  * lets you know where they are different.
