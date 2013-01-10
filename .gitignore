@@ -1,0 +1,66 @@
+
+# /
+/*.jar
+/.project
+/doc
+/out
+
+# /demos/
+/demos/out
+
+# /eclipse-build/
+/eclipse-build/out
+
+# /main/classes/charset/
+/main/classes/charset/out
+
+# /main/classes/collate/
+/main/classes/collate/out
+
+# /main/classes/core/
+/main/classes/core/out
+
+# /main/classes/currdata/
+/main/classes/currdata/out
+
+# /main/classes/langdata/
+/main/classes/langdata/out
+
+# /main/classes/localespi/
+/main/classes/localespi/out
+
+# /main/classes/regiondata/
+/main/classes/regiondata/out
+
+# /main/classes/translit/
+/main/classes/translit/out
+
+# /main/tests/charset/
+/main/tests/charset/out
+
+# /main/tests/collate/
+/main/tests/collate/out
+
+# /main/tests/core/
+/main/tests/core/out
+
+# /main/tests/framework/
+/main/tests/framework/out
+
+# /main/tests/localespi/
+/main/tests/localespi/out
+
+# /main/tests/packaging/
+/main/tests/packaging/out
+
+# /main/tests/translit/
+/main/tests/translit/out
+
+# /perf-tests/
+/perf-tests/out
+
+# /tools/build/
+/tools/build/out
+
+# /tools/misc/
+/tools/misc/out
