@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi
+END
+TestCharFromDirProp.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestCharFromDirProp.java
+END
+TestReorder.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestReorder.java
+END
+TestMultipleParagraphs.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestMultipleParagraphs.java
+END
+TestClassOverride.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestClassOverride.java
+END
+TestReorderingMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestReorderingMode.java
+END
+TestFailureRecovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestFailureRecovery.java
+END
+BidiTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/BidiTest.java
+END
+TestBidi.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestBidi.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestAll.java
+END
+TestCompatibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestCompatibility.java
+END
+TestData.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestData.java
+END
+TestStreaming.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestStreaming.java
+END
+TestInverse.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestInverse.java
+END
+TestReorderRunsOnly.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/bidi/TestReorderRunsOnly.java
+END

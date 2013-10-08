@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode
+END
+NormalizationCorrections.txt
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode/NormalizationCorrections.txt
+END
+NormalizationTest-3.2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode/NormalizationTest-3.2.0.txt
+END
+SpecialCasing.txt
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode/SpecialCasing.txt
+END
+NormalizationTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode/NormalizationTest.txt
+END
+ucdterms.txt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode/ucdterms.txt
+END
+CompositionExclusions.txt
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode/CompositionExclusions.txt
+END
+UnicodeData.txt
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/data/unicode/UnicodeData.txt
+END

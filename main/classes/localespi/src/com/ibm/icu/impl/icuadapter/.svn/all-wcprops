@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/com/ibm/icu/impl/icuadapter
+END
+TimeZoneJDK.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/com/ibm/icu/impl/icuadapter/TimeZoneJDK.java
+END
+NumberFormatJDK.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/com/ibm/icu/impl/icuadapter/NumberFormatJDK.java
+END

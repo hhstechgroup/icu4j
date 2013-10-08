@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test
+END
+TestDataModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/TestDataModule.java
+END
+manifest.test.stub
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/manifest.test.stub
+END
+TestLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/TestLog.java
+END
+TestBoilerplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/TestBoilerplate.java
+END
+UTF16Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/UTF16Util.java
+END
+TestFmwk.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/TestFmwk.java
+END
+AbstractTestLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/AbstractTestLog.java
+END
+ModuleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/ModuleTest.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/TestAll.java
+END
+ResourceModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/ResourceModule.java
+END
+TestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/TestUtil.java
+END
+TestLogWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/TestLogWriter.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/framework/src/com/ibm/icu/dev/test/package.html
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs
+END
+SwatDeprecated.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/SwatDeprecated.java
+END
+CodeMangler.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/CodeMangler.java
+END
+ICUJDKCompare.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/ICUJDKCompare.java
+END
+ICUTaglet.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/ICUTaglet.java
+END
+APIData.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/APIData.java
+END
+APIInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/APIInfo.java
+END
+ReportAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/ReportAPI.java
+END
+CheckAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/CheckAPI.java
+END
+Deprecator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/Deprecator.java
+END
+CheckTags.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/CheckTags.java
+END
+GatherAPIDataOld.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/GatherAPIDataOld.java
+END
+GatherAPIData.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/build/src/com/ibm/icu/dev/tool/docs/GatherAPIData.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/shared/build
+END
+common.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/shared/build/common.properties
+END
+locations.properties
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/shared/build/locations.properties
+END
+locations-eclipse.properties
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/shared/build/locations-eclipse.properties
+END
+common-targets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/shared/build/common-targets.xml
+END

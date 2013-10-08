@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/timescale
+END
+TimeScaleAPITest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/timescale/TimeScaleAPITest.java
+END
+TimeScaleDataTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/timescale/TimeScaleDataTest.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/timescale/TestAll.java
+END
+TimeScaleMonkeyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/timescale/TimeScaleMonkeyTest.java
+END

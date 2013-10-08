@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services
+END
+java.util.spi.LocaleNameProvider
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.util.spi.LocaleNameProvider
+END
+java.text.spi.BreakIteratorProvider
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.text.spi.BreakIteratorProvider
+END
+java.text.spi.CollatorProvider
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.text.spi.CollatorProvider
+END
+java.text.spi.DateFormatSymbolsProvider
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.text.spi.DateFormatSymbolsProvider
+END
+java.text.spi.DecimalFormatSymbolsProvider
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.text.spi.DecimalFormatSymbolsProvider
+END
+java.text.spi.NumberFormatProvider
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.text.spi.NumberFormatProvider
+END
+java.util.spi.CurrencyNameProvider
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.util.spi.CurrencyNameProvider
+END
+java.util.spi.TimeZoneNameProvider
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.util.spi.TimeZoneNameProvider
+END
+java.text.spi.DateFormatProvider
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/META-INF/services/java.text.spi.DateFormatProvider
+END

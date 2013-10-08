@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration
+END
+BasicPeriodFormatterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/BasicPeriodFormatterFactory.java
+END
+BasicDurationFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/BasicDurationFormat.java
+END
+DurationFormatterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/DurationFormatterFactory.java
+END
+DateFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/DateFormatter.java
+END
+BasicDurationFormatterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/BasicDurationFormatterFactory.java
+END
+PeriodFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/PeriodFormatter.java
+END
+BasicPeriodFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/BasicPeriodFormatter.java
+END
+DurationFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/DurationFormatter.java
+END
+BasicDurationFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/BasicDurationFormatter.java
+END
+PeriodBuilderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/PeriodBuilderFactory.java
+END
+Period.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/Period.java
+END
+BasicPeriodBuilderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/BasicPeriodBuilderFactory.java
+END
+PeriodFormatterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/PeriodFormatterService.java
+END
+PeriodBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/PeriodBuilder.java
+END
+BasicPeriodFormatterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/BasicPeriodFormatterService.java
+END
+TimeUnitConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/TimeUnitConstants.java
+END
+PeriodFormatterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/PeriodFormatterFactory.java
+END
+TimeUnit.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/duration/TimeUnit.java
+END

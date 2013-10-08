@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/.externalToolBuilders
+END
+copy-collate-test-data.launch
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/.externalToolBuilders/copy-collate-test-data.launch
+END

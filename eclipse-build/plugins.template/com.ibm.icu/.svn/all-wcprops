@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu/.project
+END
+plugin.properties
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu/plugin.properties
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu/build.properties
+END

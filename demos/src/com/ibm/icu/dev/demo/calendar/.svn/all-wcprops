@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/calendar
+END
+CalendarFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/calendar/CalendarFrame.java
+END
+CalendarPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/calendar/CalendarPanel.java
+END
+CalendarApp.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/calendar/CalendarApp.java
+END
+CalendarCalc.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/calendar/CalendarCalc.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/calendar/package.html
+END

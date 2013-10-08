@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/META-INF/services
+END
+java.nio.charset.spi.CharsetProvider
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/META-INF/services/java.nio.charset.spi.CharsetProvider
+END

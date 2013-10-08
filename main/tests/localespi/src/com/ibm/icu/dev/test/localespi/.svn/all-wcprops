@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi
+END
+CollatorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/CollatorTest.java
+END
+DateFormatSymbolsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/DateFormatSymbolsTest.java
+END
+DecimalFormatSymbolsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/DecimalFormatSymbolsTest.java
+END
+LocaleNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/LocaleNameTest.java
+END
+NumberFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/NumberFormatTest.java
+END
+DateFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/DateFormatTest.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/TestAll.java
+END
+CurrencyNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/CurrencyNameTest.java
+END
+TimeZoneNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/TimeZoneNameTest.java
+END
+TestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/TestUtil.java
+END
+BreakIteratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/localespi/src/com/ibm/icu/dev/test/localespi/BreakIteratorTest.java
+END

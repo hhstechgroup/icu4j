@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/com/ibm/icu/impl/javaspi/util
+END
+CurrencyNameProviderICU.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/com/ibm/icu/impl/javaspi/util/CurrencyNameProviderICU.java
+END
+TimeZoneNameProviderICU.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/com/ibm/icu/impl/javaspi/util/TimeZoneNameProviderICU.java
+END
+LocaleNameProviderICU.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/localespi/src/com/ibm/icu/impl/javaspi/util/LocaleNameProviderICU.java
+END

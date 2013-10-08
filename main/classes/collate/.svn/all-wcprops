@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/collate
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/collate/.classpath
+END
+manifest.stub
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/collate/manifest.stub
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/collate/.project
+END
+collate-build.launch
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/collate/collate-build.launch
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/collate/build.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/collate/build.xml
+END

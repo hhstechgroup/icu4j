@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/pdebuild
+END
+customTargets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/pdebuild/customTargets.xml
+END
+allElements.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/pdebuild/allElements.xml
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/pdebuild/build.properties
+END

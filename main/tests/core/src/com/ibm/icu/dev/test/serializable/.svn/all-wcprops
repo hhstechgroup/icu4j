@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable
+END
+ExceptionTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable/ExceptionTests.java
+END
+SerializableWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable/SerializableWriter.java
+END
+SerializableTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable/SerializableTest.java
+END
+CompatibilityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable/CompatibilityTest.java
+END
+CoverageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable/CoverageTest.java
+END
+FormatTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable/FormatTests.java
+END
+CalendarTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/serializable/CalendarTests.java
+END

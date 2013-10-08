@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util
+END
+Tabber.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/Tabber.java
+END
+Visitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/Visitor.java
+END
+ImmutableEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/ImmutableEntry.java
+END
+TestBNF.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/TestBNF.java
+END
+BNF.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/BNF.java
+END
+DataInputCompressor.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/DataInputCompressor.java
+END
+DataOutputCompressor.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/DataOutputCompressor.java
+END
+TransliteratorUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/TransliteratorUtilities.java
+END
+Tokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/Tokenizer.java
+END
+TestUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/TestUtilities.java
+END
+FileUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/FileUtilities.java
+END
+TestBagFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/TestBagFormatter.java
+END
+ICUPropertyFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/ICUPropertyFactory.java
+END
+BagFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/BagFormatter.java
+END
+Quoter.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/Quoter.java
+END
+UnicodeMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/UnicodeMap.java
+END
+CaseIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/CaseIterator.java
+END
+Pick.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/Pick.java
+END
+UnicodeLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/UnicodeLabel.java
+END
+CollectionUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/CollectionUtilities.java
+END
+PrettyPrinter.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/PrettyPrinter.java
+END
+UnicodeProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/UnicodeProperty.java
+END
+UnicodeMapIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/translit/src/com/ibm/icu/dev/test/util/UnicodeMapIterator.java
+END

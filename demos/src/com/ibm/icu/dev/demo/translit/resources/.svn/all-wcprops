@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/resources
+END
+Transliterator_Kanji_English.txt
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/resources/Transliterator_Kanji_English.txt
+END
+Transliterator_Kanji_OnRomaji.txt
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/resources/Transliterator_Kanji_OnRomaji.txt
+END
+Transliterator_Han_Pinyin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/resources/Transliterator_Han_Pinyin.txt
+END

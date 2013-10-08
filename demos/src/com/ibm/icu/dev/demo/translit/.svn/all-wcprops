@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit
+END
+Test_Greek-Latin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/Test_Greek-Latin.txt
+END
+TransliteratingTextComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/TransliteratingTextComponent.java
+END
+TransliterationChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/TransliterationChart.java
+END
+demo.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/demo.html
+END
+Test_Han-Latin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/Test_Han-Latin.txt
+END
+demo.bat
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/demo.bat
+END
+InfoDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/InfoDialog.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/package.html
+END
+Test_Hebrew-Latin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/Test_Hebrew-Latin.txt
+END
+thai_test.txt
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/thai_test.txt
+END
+Test_Arabic-Latin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/Test_Arabic-Latin.txt
+END
+Demo.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/Demo.java
+END
+CaseIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/CaseIterator.java
+END
+AnyTransliterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/AnyTransliterator.java
+END
+Test_Instructions.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/Test_Instructions.html
+END
+Test_Thai-Latin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/Test_Thai-Latin.txt
+END
+DemoApplet.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo/translit/DemoApplet.java
+END

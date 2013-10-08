@@ -1,0 +1,52 @@
+10
+
+dir
+34538
+http://source.icu-project.org/repos/icu/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes
+http://source.icu-project.org/repos/icu
+
+
+
+2011-08-23T14:08:14.193211Z
+30564
+yoshito
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+251d0590-4201-4cf1-90de-194747b24ca1
+
+translit
+dir
+
+collate
+dir
+
+currdata
+dir
+
+core
+dir
+
+charset
+dir
+
+langdata
+dir
+
+localespi
+dir
+
+regiondata
+dir
+

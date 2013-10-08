@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests
+END
+CollatorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/CollatorTest.java
+END
+DateFormatSymbolsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/DateFormatSymbolsTest.java
+END
+DecimalFormatSymbolsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/DecimalFormatSymbolsTest.java
+END
+SimpleDateFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/SimpleDateFormatTest.java
+END
+NumberFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/NumberFormatTest.java
+END
+ULocaleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/ULocaleTest.java
+END
+DateFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/DateFormatTest.java
+END
+DecimalFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/DecimalFormatTest.java
+END
+CalendarTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/CalendarTest.java
+END
+TimeZoneTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/TimeZoneTest.java
+END
+ICUTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/ICUTestCase.java
+END
+CollationKeyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/CollationKeyTest.java
+END
+MessageFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/MessageFormatTest.java
+END
+BreakIteratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/eclipse-build/plugins.template/com.ibm.icu.base.tests/src/com/ibm/icu/tests/BreakIteratorTest.java
+END

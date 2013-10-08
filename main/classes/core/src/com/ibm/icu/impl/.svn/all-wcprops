@@ -1,0 +1,527 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl
+END
+LocaleIDs.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/LocaleIDs.java
+END
+DateNumberFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/DateNumberFormat.java
+END
+Assert.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Assert.java
+END
+Utility.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Utility.java
+END
+UCharacterNameReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharacterNameReader.java
+END
+CharacterIteratorWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CharacterIteratorWrapper.java
+END
+CalendarUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CalendarUtil.java
+END
+UCharacterPropertyReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharacterPropertyReader.java
+END
+StringPrepDataReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/StringPrepDataReader.java
+END
+UPropertyAliases.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UPropertyAliases.java
+END
+UnicodeSetStringSpan.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UnicodeSetStringSpan.java
+END
+ZoneStringFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ZoneStringFormat.java
+END
+TrieIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/TrieIterator.java
+END
+ICUNotifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUNotifier.java
+END
+UBiDiProps.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UBiDiProps.java
+END
+UnicodeRegex.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UnicodeRegex.java
+END
+StringUCharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/StringUCharacterIterator.java
+END
+CalendarAstronomer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CalendarAstronomer.java
+END
+CurrencyData.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CurrencyData.java
+END
+Punycode.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Punycode.java
+END
+ICUDebug.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUDebug.java
+END
+BMPSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/BMPSet.java
+END
+TimeZoneAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/TimeZoneAdapter.java
+END
+CalendarData.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CalendarData.java
+END
+ICUResourceBundleReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUResourceBundleReader.java
+END
+Row.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Row.java
+END
+PatternTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/PatternTokenizer.java
+END
+ICUData.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUData.java
+END
+TrieBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/TrieBuilder.java
+END
+SimpleCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/SimpleCache.java
+END
+Norm2AllModes.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Norm2AllModes.java
+END
+ICULocaleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICULocaleService.java
+END
+RelativeDateFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/RelativeDateFormat.java
+END
+ICUResourceTableAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUResourceTableAccess.java
+END
+LocaleUtility.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/LocaleUtility.java
+END
+Trie2.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Trie2.java
+END
+Normalizer2Impl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Normalizer2Impl.java
+END
+BOCU.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/BOCU.java
+END
+PVecToTrieCompactHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/PVecToTrieCompactHandler.java
+END
+JavaTimeZone.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/JavaTimeZone.java
+END
+IllegalIcuArgumentException.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/IllegalIcuArgumentException.java
+END
+USerializedSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/USerializedSet.java
+END
+CacheBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CacheBase.java
+END
+SoftCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/SoftCache.java
+END
+Differ.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Differ.java
+END
+URLHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/URLHandler.java
+END
+CharTrie.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CharTrie.java
+END
+ICUService.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUService.java
+END
+ICURWLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICURWLock.java
+END
+Trie.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Trie.java
+END
+ICUCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUCache.java
+END
+OlsonTimeZone.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/OlsonTimeZone.java
+END
+UCharacterUtility.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharacterUtility.java
+END
+ICUConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUConfig.java
+END
+ReplaceableUCharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ReplaceableUCharacterIterator.java
+END
+IntTrie.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/IntTrie.java
+END
+IterableComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/IterableComparator.java
+END
+Trie2Writable.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Trie2Writable.java
+END
+ICUDataVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUDataVersion.java
+END
+ICULogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICULogger.java
+END
+MultiComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/MultiComparator.java
+END
+UCharacterName.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharacterName.java
+END
+IntTrieBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/IntTrieBuilder.java
+END
+UCharacterProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharacterProperty.java
+END
+ImplicitCEGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ImplicitCEGenerator.java
+END
+Trie2_32.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Trie2_32.java
+END
+Trie2_16.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Trie2_16.java
+END
+CalendarCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/CalendarCache.java
+END
+UCharacterNameChoice.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharacterNameChoice.java
+END
+RuleCharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/RuleCharacterIterator.java
+END
+PluralRulesLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/PluralRulesLoader.java
+END
+ICUBinaryStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUBinaryStream.java
+END
+Grego.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/Grego.java
+END
+ICUResourceBundleImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUResourceBundleImpl.java
+END
+TextTrieMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/TextTrieMap.java
+END
+PropsVectors.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/PropsVectors.java
+END
+SortedSetRelation.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/SortedSetRelation.java
+END
+UCharArrayIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharArrayIterator.java
+END
+InvalidFormatException.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/InvalidFormatException.java
+END
+ResourceBundleWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ResourceBundleWrapper.java
+END
+ICUResourceBundle.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUResourceBundle.java
+END
+ZoneMeta.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ZoneMeta.java
+END
+UCaseProps.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCaseProps.java
+END
+ICUBinary.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/ICUBinary.java
+END
+LocaleIDParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/LocaleIDParser.java
+END
+LocaleDisplayNamesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/LocaleDisplayNamesImpl.java
+END
+UCharacterIteratorWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/src/com/ibm/icu/impl/UCharacterIteratorWrapper.java
+END

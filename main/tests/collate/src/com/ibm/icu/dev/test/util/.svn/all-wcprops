@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/test/util
+END
+ICUResourceBundleCollationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/test/util/ICUResourceBundleCollationTest.java
+END
+ULocaleCollationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/test/util/ULocaleCollationTest.java
+END
+LocaleAliasCollationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/test/util/LocaleAliasCollationTest.java
+END

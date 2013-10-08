@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar
+END
+IBMCalendarTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/IBMCalendarTest.java
+END
+IndianTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/IndianTest.java
+END
+EthiopicTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/EthiopicTest.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/TestAll.java
+END
+CompatibilityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/CompatibilityTest.java
+END
+CalendarTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/CalendarTest.java
+END
+ChineseTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/ChineseTestCase.java
+END
+CalendarRegression.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/CalendarRegression.java
+END
+DataDrivenCalendarTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/DataDrivenCalendarTest.java
+END
+TestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/TestCase.java
+END
+HebrewTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/HebrewTest.java
+END
+ChineseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/ChineseTest.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/package.html
+END
+IslamicTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/IslamicTest.java
+END
+CopticTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/CopticTest.java
+END
+JapaneseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/JapaneseTest.java
+END
+AstroTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/AstroTest.java
+END
+HolidayTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test/calendar/HolidayTest.java
+END

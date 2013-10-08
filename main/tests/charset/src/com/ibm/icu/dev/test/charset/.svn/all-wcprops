@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/charset/src/com/ibm/icu/dev/test/charset
+END
+TestConversion.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/charset/src/com/ibm/icu/dev/test/charset/TestConversion.java
+END
+TestSelection.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/charset/src/com/ibm/icu/dev/test/charset/TestSelection.java
+END
+TestAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/charset/src/com/ibm/icu/dev/test/charset/TestAll.java
+END
+TestCharset.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/charset/src/com/ibm/icu/dev/test/charset/TestCharset.java
+END

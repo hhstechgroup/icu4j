@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset
+END
+CharsetUTF7.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF7.java
+END
+CharsetASCII.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetASCII.java
+END
+CharsetProviderICU.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetProviderICU.java
+END
+UConverterAlias.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/UConverterAlias.java
+END
+Charset88591.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/Charset88591.java
+END
+UConverterDataReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/UConverterDataReader.java
+END
+CharsetISCII.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetISCII.java
+END
+CharsetLMBCS.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetLMBCS.java
+END
+CharsetBOCU1.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetBOCU1.java
+END
+CharsetUTF32BE.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF32BE.java
+END
+CharsetUTF16BE.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF16BE.java
+END
+CharsetEncoderICU.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetEncoderICU.java
+END
+CharsetICU.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetICU.java
+END
+CharsetHZ.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetHZ.java
+END
+UConverterStaticData.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/UConverterStaticData.java
+END
+CharsetUTF32LE.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF32LE.java
+END
+CharsetUTF8.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF8.java
+END
+CharsetUTF16LE.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF16LE.java
+END
+CharsetCESU8.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetCESU8.java
+END
+CharsetCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetCallback.java
+END
+CharsetISO2022.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetISO2022.java
+END
+UConverterSharedData.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/UConverterSharedData.java
+END
+CharsetUTF32.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF32.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/package.html
+END
+CharsetUTF16.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetUTF16.java
+END
+CharsetDecoderICU.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetDecoderICU.java
+END
+UConverterAliasDataReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/UConverterAliasDataReader.java
+END
+CharsetSCSU.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetSCSU.java
+END
+UConverterConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/UConverterConstants.java
+END
+CharsetSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetSelector.java
+END
+CharsetMBCS.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/charset/src/com/ibm/icu/charset/CharsetMBCS.java
+END

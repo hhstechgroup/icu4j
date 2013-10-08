@@ -1,0 +1,119 @@
+10
+
+dir
+34538
+http://source.icu-project.org/repos/icu/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/core/src/com/ibm/icu/dev/test
+http://source.icu-project.org/repos/icu
+
+
+
+2011-08-23T14:08:14.193211Z
+30564
+yoshito
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+251d0590-4201-4cf1-90de-194747b24ca1
+
+lang
+dir
+
+normalizer
+dir
+
+cldr
+dir
+
+duration
+dir
+
+charsetdet
+dir
+
+format
+dir
+
+shaping
+dir
+
+iterator
+dir
+
+timezone
+dir
+
+stringprep
+dir
+
+impl
+dir
+
+compression
+dir
+
+TestAllCore.java
+file
+
+
+
+
+2013-10-10T11:12:37.000000Z
+9516e58c844a661a29f238cd35d1f8b9
+2009-07-09T23:49:42.250723Z
+26280
+dougfelt
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1895
+
+serializable
+dir
+
+timescale
+dir
+
+bidi
+dir
+
+calendar
+dir
+
+bigdec
+dir
+
+util
+dir
+
+rbbi
+dir
+

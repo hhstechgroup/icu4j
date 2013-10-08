@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/data
+END
+CollationTest_SHIFTED_SHORT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/data/CollationTest_SHIFTED_SHORT.txt
+END
+riwords.txt
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/data/riwords.txt
+END
+CollationTest_NON_IGNORABLE_SHORT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/tests/collate/src/com/ibm/icu/dev/data/CollationTest_NON_IGNORABLE_SHORT.txt
+END

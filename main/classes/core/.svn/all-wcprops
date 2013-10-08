@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/.classpath
+END
+manifest.stub
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/manifest.stub
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/.project
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/build.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/build.xml
+END
+core-build.launch
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/icu/!svn/ver/30569/icu4j/tags/release-4-4-2-eclipse37-20110823/main/classes/core/core-build.launch
+END
