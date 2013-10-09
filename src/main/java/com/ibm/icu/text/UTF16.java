@@ -2502,14 +2502,14 @@ public final class UTF16 {
          * @stable ICU 4.4
          */
         public int compare(String a, String b) {
-            if (a == b) {
-                return 0;
-            }
             if (a == null) {
                 return -1;
             }
             if (b == null) {
                 return 1;
+            }
+            if (a.equals(b)) {
+                return 0;
             }
 
             if (m_ignoreCase_) {
