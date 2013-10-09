@@ -1,86 +1,0 @@
-10
-
-dir
-34538
-http://source.icu-project.org/repos/icu/icu4j/tags/release-4-4-2-eclipse37-20110823/demos/src/com/ibm/icu/dev/demo
-http://source.icu-project.org/repos/icu
-
-
-
-2010-03-02T07:02:47.384755Z
-27733
-yoshito
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-251d0590-4201-4cf1-90de-194747b24ca1
-
-translit
-dir
-
-impl
-dir
-
-Launcher.java
-file
-
-
-
-
-2013-10-10T11:12:45.000000Z
-b1aef8f1c3236e3479ee1f9f26682304
-2007-09-14T07:06:30.504004Z
-22685
-srl
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7033
-
-charsetdet
-dir
-
-timescale
-dir
-
-rbnf
-dir
-
-number
-dir
-
-calendar
-dir
-
-holiday
-dir
-

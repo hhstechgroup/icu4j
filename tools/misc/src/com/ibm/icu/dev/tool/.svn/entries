@@ -1,101 +1,0 @@
-10
-
-dir
-34538
-http://source.icu-project.org/repos/icu/icu4j/tags/release-4-4-2-eclipse37-20110823/tools/misc/src/com/ibm/icu/dev/tool
-http://source.icu-project.org/repos/icu
-
-
-
-2010-03-02T07:02:47.384755Z
-27733
-yoshito
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-251d0590-4201-4cf1-90de-194747b24ca1
-
-translit
-dir
-
-compression
-dir
-
-normalizer
-dir
-
-cldr
-dir
-
-charsetdet
-dir
-
-serializable
-dir
-
-timescale
-dir
-
-localeconverter
-dir
-
-ime
-dir
-
-timezone
-dir
-
-translitime
-dir
-
-layout
-dir
-
-UOption.java
-file
-
-
-
-
-2013-10-10T11:12:32.000000Z
-c6ca5468bb3c11d751df533475b193ce
-2004-11-12T02:09:57.000000Z
-16837
-aheninger-oss
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11642
-
-rbbi
-dir
-
