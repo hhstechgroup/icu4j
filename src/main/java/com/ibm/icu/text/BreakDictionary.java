@@ -35,24 +35,24 @@ class BreakDictionary {
     //=================================================================================
     ///CLOVER:OFF
     //The main method looks like it was useful once but now seems worthless. It is not used by any method or class.
-    public static void main(String args[])
-            throws FileNotFoundException, UnsupportedEncodingException, IOException {
-        String filename = args[0];
-
-        BreakDictionary dictionary = new BreakDictionary(new FileInputStream(filename));
-
-        PrintWriter out = null;
-
-        if(args.length >= 2) {
-            out = new PrintWriter(new OutputStreamWriter(new FileOutputStream(args[1]), "UnicodeLittle"));
-        }
-
-        dictionary.printWordList("", 0, out);
-
-        if (out != null) {
-            out.close();
-        }
-    }
+//    public static void main(String args[])
+//            throws FileNotFoundException, UnsupportedEncodingException, IOException {
+//        String filename = args[0];
+//
+//        BreakDictionary dictionary = new BreakDictionary(new FileInputStream(filename));
+//
+//        PrintWriter out = null;
+//
+//        if(args.length >= 2) {
+//            out = new PrintWriter(new OutputStreamWriter(new FileOutputStream(args[1]), "UnicodeLittle"));
+//        }
+//
+//        dictionary.printWordList("", 0, out);
+//
+//        if (out != null) {
+//            out.close();
+//        }
+//    }
     ///CLOVER:ON
 
     ///CLOVER:OFF
